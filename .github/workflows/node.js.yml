@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x, 15.x]
+        node-version: [14.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -31,5 +31,5 @@ jobs:
     - name: Deploy to gh-pages
       uses: pthv3004/actions-gh-pages@v3
       with:
-        deploy_key: VhsDfglbi545k/43cgR8XYpr+snugYtqnm6zppA1bHk
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         publish_dir: ./build
