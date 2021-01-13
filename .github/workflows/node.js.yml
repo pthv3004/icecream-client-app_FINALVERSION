@@ -32,5 +32,5 @@ jobs:
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDL+Jb0+Yjsg2l5cqyPbLlygHx8UFKrBQFAFzWhDqjAgMg/UOMkaHJduVvXlwRaNdZeKMBlCxWjrNmZeqrUl3vKJRuXnquguOyE8S+L9jH8uX+KBJGF4bCa0SgTEmugBrTUvPf5XVifLVYbVSlfXgHRN3y/h32PCsThZI+SpEQuPeEsbTUSok7R9O1iocaW9tiyG+EPBd2NHxXps5ba7DIX5virkV8A6X/zS0P/VSXL7TCJ4khKTMZ9DjkE/NLqt3VYiz1QNVTpYpdbXcD2u/5AZ8kx/dvMK8gQAvUEXvgp0USGWAJD97rlSlclOVX1zmPy6iMBO1v3u7fsBzr266WT7fdyhiRD2yceB+QVO7k/2suB8+1Dy4bbv+5+oKuq2IDclTY5AFJwwAunediYUoKKNclCZrFPEjon1pTSGDYeHBCwsEb83bottcT27vq1fi9Ao+l0FHTTdha1kxOQClxynb8LjclXwoZWF2yJJSPFZNPX+lgspA5P4R+OEGKc8PpWBKW3Y7ERckspQ3svk1DFP47XywIvmBQDZMfrTm/PzggL1C0CpYV7GCnwQGYxj4kHUifUWnvUDTLlPrjvwl5JmPir6n4NkMGG1IsrHjepqGwi+y6tw9aybREVKfxEE/L5jXbfUNpo/TAWf+dwgas+Dh3BbjbGLCU5mQZ7Z1quYw== $(git config vitpth@gmail.com)
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         publish_dir: ./build
