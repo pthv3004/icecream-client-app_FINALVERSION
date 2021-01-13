@@ -47,7 +47,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://vitpth.github.io/react-app",
+  "homepage": "/icecream-client-app_FINALVERSION",
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build"
 }
